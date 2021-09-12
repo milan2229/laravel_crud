@@ -1,7 +1,13 @@
-<h1>create</h1>
-<a href="{{ route('contact.index') }}">一覧画面</a>
-<h1>テスト</h1>
-<form method="POST" action="{{ route('contact.store') }}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div class="container">
+<div class="card">
+  <div class="card-header">
+  <a href="{{ route('contact.index') }}">一覧画面</a>
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <form method="POST" action="{{ route('contact.store') }}">
 @csrf
 氏名
 <input type="text" name="your_name">
@@ -31,10 +37,14 @@
 </select>
 <br>
 お問い合わせ内容
+<br>
 <textarea name="contact"></textarea>
 <br>
-
 <input type="checkbox" name="caution" value="1">注意事項<br>
-
-<input class="btn btn-info" type="submit" value="登録する">
+<input class="btn btn-success" type="submit" value="登録する">
 </form>
+      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+</div>
+</div>
