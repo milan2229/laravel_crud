@@ -1,6 +1,6 @@
 <h1>create</h1>
 <a href="{{ route('contact.index') }}">一覧画面</a>
-
+<h1>テスト</h1>
 <form method="POST" action="{{ route('contact.store') }}">
 @csrf
 氏名

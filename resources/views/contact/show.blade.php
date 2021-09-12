@@ -7,7 +7,6 @@
 <input type="submit" value="削除">
 </form>
 
-
 <tr>
       <th scope="row"><a href="{{ route('contact.show',$contact->id) }}">{{ $contact->your_name }}</a></th>
       <td>{{ $contact->title }}</td>
